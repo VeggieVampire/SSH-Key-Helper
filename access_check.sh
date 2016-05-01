@@ -7,7 +7,7 @@ NC='\033[0m' # No Color
 for x in `cat /home/$USER/NodeList`
  do
 
-        ssh -q $USER@$x 'uname -a'| awk '{print $2}'>/home/$USER/checkhost
+        ssh -q -o ConnectTimeout=5 $USER@$x 'uname -a'| awk '{print $2}'>/home/$USER/checkhost
 		
                 checkhostz=$(cat /home/$USER/checkhost)
                 if [ "$checkhostz" == "$x" ]; then
