@@ -4,8 +4,8 @@
 #https://github.com/VeggieVampire/SSH-Key-Helper
 #creates key
 ssh-keygen -t rsa
-#Place NodeList into /home/'your user directory'
-for x in `cat /home/$USER/NodeList`
+
+for x in `cat NodeList`
 do
         echo "$x"
         #Makes a ssh directory under your home directory
