@@ -19,4 +19,4 @@ for x in `cat /home/$USER/NodeList`
 
  done
  rm -rf /home/$USER/checkhost
- rm -rf /home/$USER/NodeList
+ #rm -rf /home/$USER/NodeList
